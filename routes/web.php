@@ -6,6 +6,7 @@
 }); */
 
 Route::view('/', 'welcome');
+Route::view('/about', 'about');
 
 //Route::get('/{name}/{age}', 'PublicController@index')->name('welcome');
 
