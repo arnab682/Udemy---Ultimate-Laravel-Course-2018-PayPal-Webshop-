@@ -5,8 +5,11 @@
     return view('welcome');
 }); */
 
-Route::view('/', 'welcome');
-Route::view('/about', 'about');
+Route::get('/', 'PublicController@index')->name('welcome');
+//Route::view('/about', 'about');
+Route::view('/about', 'about')->name('about');
+Route::get('/contact', 'PublicController@contact')->name('contact');
+Route::post('/contact', 'PublicController@contactPost')->name('contactPost');
 
 //Route::get('/{name}/{age}', 'PublicController@index')->name('welcome');
 

@@ -24,5 +24,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        //View::share('title','Arnab Das');
+        //View::share('title','Arnab Das');
     }
 }
